@@ -1,0 +1,195 @@
+body{
+	font-family: 'Playfair Display', serif;
+	background-color: rgba(1, 1, 1, 0.56);
+	color: #fff
+	;
+}
+
+h1{
+	font-family: 'Raleway', sans-serif;
+}
+.jumbotron {
+	background: url("friends-map.jpeg") no-repeat center center;
+	background-size: cover;
+	font-family: 'Raleway', sans-serif;
+	height: 700px;
+}
+
+.navbar {
+	background-color: #FFF;
+	margin-bottom: 0;
+	border-bottom: 3px solid #FFF;
+	font-family: 'Raleway', sans-serif;
+	border-radius: 0;
+}
+
+.fa-link {
+	margin-right: 10px;
+}
+a:hover{
+	text-decoration: none;
+}
+
+
+.submit{
+	
+	background-color: #010101;
+	color: #FFF;
+	height: 30%;
+	width: 50%;
+	border-radius: 3px;
+	margin: 10px
+	
+}
+
+.submit:hover {
+	background-color: #FFF;
+	color: #010101;
+	border: 2px solid black !important;
+}
+.submit:focus {
+	background-color: #FFF;
+	color: #010101;
+	border: 2px solid black !important;
+}
+
+
+.navbar-text {
+	color: #010101 !important;
+}
+
+.navbar-link {
+
+	color: #010101 !important;
+}
+.navbar img{
+	height: 40px;
+}
+
+.heading {
+	margin-top: 50px;
+	margin-bottom: 15px;
+	font-weight: bold;
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-size: 45px;
+}
+
+.sub-heading {
+	margin-bottom: 15px;
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-size: 22px;
+}
+
+.bio-section {
+	margin-top: 80px;
+}
+
+.member-photo {
+	border-radius: 100%;
+	height: 250px;
+}
+
+.bio-text {
+	margin-top: 80px;
+}
+
+footer {
+	background-color: black;
+	border-top: 3px solid #63D148;
+	margin-top: 80px;
+	height: 100px;
+}
+
+.footer {
+	padding-top: 40px;
+}
+
+.footer-text {
+	color: white;
+	font-family: 'Merienda One', cursive;
+}
+h3{
+	font-size: 30px;
+}
+
+
+
+/* ===================================================
+SURVEY PAGE
+===================================================*/
+
+.survey-container{
+	/*background: url("map.jpeg") no-repeat center center;*/
+	background-size: cover;
+	font-family: 'Raleway', sans-serif;
+	height: 100vh;
+	padding:10px;
+	/*width: 60%;*/
+}
+#survey-page {
+	background-color: #AED6F1;
+}
+
+#survey-header, h1{
+	padding-top: 20px;
+	margin-top: 95px;
+	font-family: 'Playfair Display', serif;
+	font-size: 60px;
+	font-weight: bold;
+}
+
+.panel-heading-custom{
+	background-color: white !important;
+	height: 100px;
+}
+form{
+	color: #010101;
+}
+.fa-address-card-o {
+	padding-right: 20px;
+}
+
+.form-subheading {
+	padding: 30px 0 0 0;
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-size: 35px;
+}
+
+.form-container {
+	box-shadow: 0 8px 10px 10px rgba(0, 0, 0, 0.2), 0 8px 20px 10px rgba(0, 0, 0, 0.19);
+	padding: 0 40px 40px 40px;
+	margin-top: 100px;
+	margin-bottom: 50px;
+	background-color: white;
+}
+
+.form-group {
+	margin-bottom: 30px;
+}
+
+
+/*====================================================
+RESULTS PAGE
+=====================================================*/
+
+.item {
+	height: 400px;
+}
+
+#carousel-example-generic {
+	margin: 20px 0;
+}
+
+#more-info {
+	margin-bottom: 50px;
+}
+
+.results-title {
+	margin-top: 25px;
+}
+
+.results-image {
+	max-width: 100%;
+	height: 100%;
+	border-radius: 5px;
+}

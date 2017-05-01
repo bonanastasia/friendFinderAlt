@@ -1,66 +1,55 @@
 <!DOCTYPE html>
 <html>
+
 <head lang="en-us">
-	<meta charset="utf-8">
-	<title>Current Reservations</title>
-
-	<!-- Bootstrap CDN -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-
-	<!-- jQuery library -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
-
-	<!-- Latest compiled JavaScript -->
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
-	<!-- Link to JavaScript files -->
-	<!-- Link to JavaScript files -->
-	<script type="text/javascript" src="frontEnd.js"></script>
-
-
-	<!-- Link to CSS files -->
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<link rel="stylesheet" type="text/css" href="assets/style.css">
-	
-
-
-	<!-- Font Awesome -->
-	<script src="https://use.fontawesome.com/28a2b82478.js"></script>
+    <meta charset="utf-8">
+    <title>Current Reservations</title>
+    <!-- Bootstrap CDN -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- Link to JavaScript files -->
+    <!-- Link to JavaScript files -->
+    <script type="text/javascript" src="frontend.js"></script>
+    <!-- Link to CSS files -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="assets/style.css">
+    <!-- Font Awesome -->
+    <script src="https://use.fontawesome.com/28a2b82478.js"></script>
 </head>
-<body>
-	<div class="jumbotron jumbotron-tables text-center">
-		<div class="container container-heading">
-			<h1 class="title">Reservation Status</h1>
-			<hr />
-			<h3 class="subtitle">Current Reservations and Waiting List</h3>
-			<a href="/"><button class="btn btn-lg btn-primary" id="home"><i class="fa fa-home" aria-hidden="true"></i>Home</button></a>
-			<a href="reserve"><button class="btn btn-lg btn-danger" id="make-reservation"><i class="fa fa-th-list" aria-hidden="true"></i>Make Reservation</button></a>
-		</div>
-	</div>
-		<div class="container">
-		<div class="panel panel-default">
-		  <div class="panel-heading">
-		    <h3 class="panel-title">Current Reservations</h3>
-		  </div>
-		  <div class="panel-body" id="dataTable">
-		    
-		  </div>
-		</div>
 
-		<div class="panel panel-default">
-		  <div class="panel-heading">
-		    <h3 class="panel-title">Waiting List</h3>
-		  </div>
-		  <div class="panel-body">
-		    
-		  </div>
-		</div>
-		<div id="links">
-			<p id="control-panel">Control Panel</p>
-			<a href="#">Clear Table</a> |
-			<a href="#">API Table Link</a> |
-			<a href="#">API Wait List</a>
-		</div>
-	</div>
+<body>
+    <nav class="navbar navbar">
+        <div class="container">
+            <h2 class="navbar-text text-left"><img src="assets/001-conversation.png" alt ="people talking icon"> <strong>JUST</strong>friends</h2>
+        </div>
+    </nav>
+    <div class="container text-center">
+        <div class="row">
+            <div class="col-sm-12">
+                <h1 class="results-title">Your Best Match</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-6 col-sm-offset-3 text-center">
+                <div class="item">
+                    <img src="http://www.fillmurray.com/600/600" class="results-image" id="match-image">
+                </div>
+                <div class="results-info">
+                    <h3 id="match-name">Ana</h3>
+                    <p id="match-location">Austin, TX</p>
+                    <strong>hobbies: </strong>
+                    <p id="match-hobbies">Piano</p>
+                </div>
+            </div>
+        </div>
+        <a href="/">
+            <button class="btn btn-lg submit" id="home"><i class="fa fa-home" aria-hidden="true"></i>Home</button>
+        </a>
+    </div>
+    <!-- <script type="text/javascript" src="./assets/friends.js"></script> -->
 </body>
+
 </html>

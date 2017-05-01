@@ -1,215 +1,177 @@
 <!DOCTYPE html>
 <html>
+
 <head lang="en-us">
-	<meta charset="utf-8">
-	<title>Friend Survey</title>
-
-	<!-- Bootstrap CDN -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-
-	<!-- jQuery library -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
-
-	<!-- Latest compiled JavaScript -->
-
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
-	<!-- Link to JavaScript files -->
-	<script type="text/javascript" src="frontEnd.js"></script>
-
-	<!-- Link to JavaScript files -->
-	<!-- <script type="text/javascript" src="frontEnd.js"></script> -->
-
-	<!-- Link to CSS files -->
-	<!-- <link rel="stylesheet" type="text/css" href="style.css"> -->
-	<!-- <link rel="stylesheet" type="text/css" href="assets/style.css"> -->
-
-
-	<!-- Font Awesome -->
-	<script src="https://use.fontawesome.com/28a2b82478.js"></script>
+    <meta charset="utf-8">
+    <title>Friend Survey</title>
+    <!-- Bootstrap CDN -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- Link to JavaScript files -->
+    <script type="text/javascript" src="frontend.js"></script>
+    <!-- Link to JavaScript files -->
+    <script type="text/javascript" src="frontEnd.js"></script>
+    <!-- Link to CSS files -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="assets/style.css">
+    <!-- Font Awesome -->
+    <script src="https://use.fontawesome.com/28a2b82478.js"></script>
 </head>
+
 <body>
-	<div class="jumbotron jumbotron-reserve text-center">
-		<div class="container container-heading">
-			<h1 class="title">Welcome to the survey!</h1>
-			<hr />
-			<h3 class="subtitle">Fill out the survery below</h3>
-			<a href="/"><button class="btn btn-lg btn-primary" id="home"><i class="fa fa-home" aria-hidden="true"></i>Home</button></a>
-			<a href="results"><button class="btn btn-lg btn-danger" id="view-tables"><i class="fa fa-wpforms" aria-hidden="true"></i>View Tables</button></a>
-		</div>
-	</div>
-		<div class="container">
-		<div class="panel panel-default">
-			<div class="panel-heading">
-		    	<h3 class="panel-title">Table Reservation</h3>
-		  	</div>		  
-		  <div class="panel-body">
-		   <form id="new-reservation-form" method="POST" action="/survey">
-			  <div class="form-group">
-			    <label for="name">Name</label>
-			    <input type="text" name="name" class="form-control" id="name" placeholder="Name">
-			  </div>
-			  <div class="form-group">
-			    <label for="photo">Photo</label>
-			    <input type="text" name="photo" class="form-control" id="photo" placeholder=" ex: www.fillmurray.com/200/300">
-			  </div>
-
-			<!--  <div class="form-group">
-			    <label for="question1">you like Pina Coladas?</label>
-			    <div class="btn-group">
-			  <button class="btn btn-default btn-sm dropdown-toggle" type="button" name="question1" placeholder="select an option" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> select an option<span class="caret"></span>
-			  </button>
-			  <ul class="dropdown-menu">
-			    <li>1(strongly disagree)</li>
-			    <li>2</li>
-			    <li>3</li>
-			    <li>4</li>
-			    <li>5(strongly agree)</li>
-			  </ul>
-			</div>
-			</div> -->
-			<h3>Question 1</h3>
-			<h4>Do you like Pina Coladas?</h4>
-
-		      <label for="q1">Select list (select one):</label>
-		      <select class="form-control" name="q1" id="q1">
-		        <option value="1">1(strongly disagree)</option>
-		        <option value="2">2</option>
-		        <option value="3">3</option>
-		        <option value="4">4</option>
-		        <option value="5">5(strongly agree)</option>
-		      </select>
-		  
-
-			 <h3>q 2</h3>
-			<h4>...and getting caught in the rain?</h4>
-
-		      <label for="q2">Select list (select one):</label>
-		      <select class="form-control" name="q2" id="q2">
-		        <option value="1">1(strongly disagree)</option>
-		        <option value="2">2</option>
-		        <option value="3">3</option>
-		        <option value="4">4</option>
-		        <option value="5">5(strongly agree)</option>
-		      </select>
-
-	
-			<h3>q 3</h3>
-			<h4>Are you into yoga?</h4>
-
-		      <label for="q3">Select list (select one):</label>
-		      <select class="form-control" name="q3" id="q3">
-		        <option value="1">1(strongly disagree)</option>
-		        <option value="2">2</option>
-		        <option value="3">3</option>
-		        <option value="4">4</option>
-		        <option value="5">5(strongly agree)</option>
-		      </select>
-
-			<h3>q 4</h3>
-			<h4>Do you have half a brain?</h4>
-
-		      <label for="q4">Select list (select one):</label>
-		      <select class="form-control" name="q4" id="q4">
-		        <option value="1">1(strongly disagree)</option>
-		        <option value="2">2</option>
-		        <option value="3">3</option>
-		        <option value="4">4</option>
-		        <option value="5">5(strongly agree)</option>
-		      </select>
-
-				<h3>q 5</h3>
-			<h4>Do you like making love at midnight?</h4>
-
-		      <label for="q5">Select list (select one):</label>
-		      <select class="form-control" name="q5" id="q5">
-		        <option value="1">1(strongly disagree)</option>
-		        <option value="2">2</option>
-		        <option value="3">3</option>
-		        <option value="4">4</option>
-		        <option value="5">5(strongly agree)</option>
-		      </select>
-
-				<h3>q 6</h3>
-			<h4>..in the dunes of the cape?</h4>
-
-		      <label for="q6">Select list (select one):</label>
-		      <select class="form-control" name="q6" id="q6">
-		        <option value="1">1(strongly disagree)</option>
-		        <option value="2">2</option>
-		        <option value="3">3</option>
-		        <option value="4">4</option>
-		        <option value="5">5(strongly agree)</option>
-		      </select>
-
-
-				<h3>q 7</h3>
-			<h4>Are you much into health food?</h4>
-
-		      <label for="q7">Select list (select one):</label>
-		      <select class="form-control" name="q7" id="q7">
-		        <option value="1">1(strongly disagree)</option>
-		        <option value="2">2</option>
-		        <option value="3">3</option>
-		        <option value="4">4</option>
-		        <option value="5">5(strongly agree)</option>
-		      </select>
-
-				<h3>q 8</h3>
-			<h4>Are you into champagne?</h4>
-
-		      <label for="q8">Select list (select one):</label>
-		      <select class="form-control" name="q8" id="q8">
-		        <option value="1">1(strongly disagree)</option>
-		        <option value="2">2</option>
-		        <option value="3">3</option>
-		        <option value="4">4</option>
-		        <option value="5">5(strongly agree)</option>
-		      </select>
-
-			
-			<h3>q 9</h3>
-			<h4>How badly is this fucking song stuck in your head now?</h4>
-
-		      <label for="q9">Select list (select one):</label>
-		      <select class="form-control" name="q9" id="q9">
-		        <option value="1">1(strongly disagree)</option>
-		        <option value="2">2</option>
-		        <option value="3">3</option>
-		        <option value="4">4</option>
-		        <option value="5">5(strongly agree)</option>
-		      </select>
-
-			<h3>q 10</h3>
-			<h4>...and how badly do you want to kill me?</h4>
-
-		      <label for="q10">Select list (select one):</label>
-		      <select class="form-control" name="q10" id="q10">
-		        <option value="1">1(strongly disagree)</option>
-		        <option value="2">2</option>
-		        <option value="3">3</option>
-		        <option value="4">4</option>
-		        <option value="5">5(strongly agree)</option>
-		      </select>
-	
-			<button type="submit" class="btn btn-primary btn-lg btn-block" id="submit"><i class="fa fa-check-circle" aria-hidden="true"></i>
- 			Submit</button>
-			
-		  </form>
-
-		  <!-- SUBMIT BUTTON -->
-		
-		
-		</div>
-
-		</div>
-		<div id="links">
-			<p id="control-panel">Control Panel</p>
-			<a href="#">Clear Table</a> |
-			<a href="API">API Table Link</a> |
-			<a href="#">API Wait List</a>
-		</div>
-	</div>
+    <nav class="navbar navbar">
+        <div class="container">
+           <a href="/">
+            <h2 class="navbar-text text-left"><img src="assets/001-conversation.png" alt ="people talking icon"> <strong>JUST</strong>friends</h2>
+		</a>
+        </div>
+    </nav>
+ 
+    <div class="container survey-container">
+        <div class="panel panel-default">
+            <div class="panel-heading panel-heading-custom">
+                <h3>Fill out a few details about yourself to find your best match...</h3>
+            </div>
+            <div class="panel-body">
+                <form id="new-reservation-form" method="POST" action="/survey">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" name="name" class="form-control" id="name" placeholder="Name">
+                    </div>
+                    <div class="form-group">
+                        <label for="name">Location</label>
+                        <input type="text" name="location" class="form-control" id="location" placeholder="Austin, Texas">
+                    </div>
+                    <div class="form-group">
+                        <label for="photo">Photo</label>
+                        <input type="text" name="photo" class="form-control" id="photo" placeholder=" ex: www.fillmurray.com/200/300">
+                    </div>
+                    <div class="form-group">
+                        <label for="hobbies">What do you like to do?</label>
+                        <input type="text" name="hobbies" class="form-control" id="hobbies" placeholder=" ex: Piano, drinking, kayaking">
+                    </div>
+           
+                    <h3>Question 1</h3>
+                    <h4>Do you like Pina Coladas?</h4>
+                    <label for="q1">Select list (select one):</label>
+                    <select class="form-control" name="q1" id="q1">
+                        <option>Select an Option</option>
+                        <option value="1">1(strongly disagree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5(strongly agree)</option>
+                    </select>
+                    <h3>Question 2</h3>
+                    <h4>...and getting caught in the rain?</h4>
+                    <label for="q2">Select list (select one):</label>
+                    <select class="form-control" name="q2" id="q2">
+                        <option>Select an Option</option>
+                        <option value="1">1(strongly disagree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5(strongly agree)</option>
+                    </select>
+                    <h3>Question 3</h3>
+                    <h4>Are you into yoga?</h4>
+                    <label for="q3">Select list (select one):</label>
+                    <select class="form-control" name="q3" id="q3">
+                        <option>Select an Option</option>
+                        <option value="1">1(strongly disagree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5(strongly agree)</option>
+                    </select>
+                    <h3>Question 4</h3>
+                    <h4>Do you have half a brain?</h4>
+                    <label for="q4">Select list (select one):</label>
+                    <select class="form-control" name="q4" id="q4">
+                        <option>Select an Option</option>
+                        <option value="1">1(strongly disagree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5(strongly agree)</option>
+                    </select>
+                    <h3>Question 5</h3>
+                    <h4>Do you like making love at midnight?</h4>
+                    <label for="q5">Select list (select one):</label>
+                    <select class="form-control" name="q5" id="q5">
+                        <option>Select an Option</option>
+                        <option value="1">1(strongly disagree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5(strongly agree)</option>
+                    </select>
+                    <h3>Question 6</h3>
+                    <h4>..in the dunes of the cape?</h4>
+                    <label for="q6">Select list (select one):</label>
+                    <select class="form-control" name="q6" id="q6">
+                        <option>Select an Option</option>
+                        <option value="1">1(strongly disagree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5(strongly agree)</option>
+                    </select>
+                    <h3>Question 7</h3>
+                    <h4>Are you much into health food?</h4>
+                    <label for="q7">Select list (select one):</label>
+                    <select class="form-control" name="q7" id="q7">
+                        <option>Select an Option</option>
+                        <option value="1">1(strongly disagree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5(strongly agree)</option>
+                    </select>
+                    <h3>Question 8</h3>
+                    <h4>Are you into champagne?</h4>
+                    <label for="q8">Select list (select one):</label>
+                    <select class="form-control" name="q8" id="q8">
+                        <option>Select an Option</option>
+                        <option value="1">1(strongly disagree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5(strongly agree)</option>
+                    </select>
+                    <h3>Question 9</h3>
+                    <h4>How badly is this fucking song stuck in your head now?</h4>
+                    <label for="q9">Select list (select one):</label>
+                    <select class="form-control" name="q9" id="q9">
+                        <option>Select an Option</option>
+                        <option value="1">1(strongly disagree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5(strongly agree)</option>
+                    </select>
+                    <h3>Question 10</h3>
+                    <h4>...and how badly do you want to kill me?</h4>
+                    <label for="q10">Select list (select one):</label>
+                    <select class="form-control" name="q10" id="q10">
+                        <option>Select an Option</option>
+                        <option value="1">1(strongly disagree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5(strongly agree)</option>
+                    </select>
+                    <button type="submit" class="btn  btn-lg btn-block submit" id="submit"><i class="fa fa-check-circle" aria-hidden="true"></i> Submit
+                    </button>
+                </form>
+                <!-- SUBMIT BUTTON -->
+            </div>
+        </div>
+     
+    </div>
 </body>
-</html>
 
+</html>
