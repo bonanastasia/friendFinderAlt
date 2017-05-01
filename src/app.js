@@ -3,13 +3,17 @@ const path = require('path');
 const bodyParser = require('body-parser');
 const app = express();
 const mysql = require('mysql');
+var connection;
 
-var connection = mysql.createConnection({
+if(process.env.JAWSDB_URL){
+	connection = mysql.createConnection(process.env.JAWSDB_URL);
+}else{ connection = mysql.createConnection({
     host: 'localhost',
     user: 'root',
     password: '',
     database: 'friendFinder_db'
 });
+};
 
 connection.connect();
 
